@@ -1,4 +1,8 @@
-import { AppLoading, Asset, Font, Icon } from 'expo'
+import * as Icon from '@expo/vector-icons';
+import { Asset } from 'expo-asset';
+import { AppLoading  } from 'expo'
+import * as Font from 'expo-font'
+
 import React from 'react'
 import { StatusBar, StyleSheet, View } from 'react-native'
 import AppNavigator from './navigation/AppNavigator'
@@ -38,7 +42,7 @@ export default class App extends React.Component {
         ...Icon.MaterialIcons.font,
         ...Icon.MaterialCommunityIcons.font,
         ...Icon.FontAwesome.font,
-        ...Icon.Feather.font,
+        // ...Icon.Feather.font,
       }),
     ])
   }
