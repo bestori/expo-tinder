@@ -9,17 +9,19 @@ class MessagesScreen extends React.Component {
       <SafeAreaView>
         <ScrollView>
           {Messages.map((user, i) => (
-            <><ListItem key={i}>
+            <ListItem key={i}>
                 <ListItem.Content>
                   <ListItem.Title style={styles.title}>
                     {user.title}
                   </ListItem.Title>
                   <ListItem.Subtitle style={styles.subtitle}>
-                      {user.message}
-                </ListItem.Subtitle>
-                <Avatar source={user.pic}/></Avatar>
+                    {user.message}
+                  </ListItem.Subtitle>
+                  <Avatar>
+                    <Avatar.Accessory source={user.pic} size='large'/>
+                  </Avatar>
+                  <ListItem.Chevron />
                 </ListItem.Content>
-                <ListItem.Chevron />
               </ListItem>
           ))}
         </ScrollView>
