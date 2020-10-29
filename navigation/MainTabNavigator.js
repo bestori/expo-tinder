@@ -1,9 +1,11 @@
-import { Icon } from 'expo'
-import React from 'react'
+import * as Icon from '@expo/vector-icons';
+import React from 'react';
 import {
   createBottomTabNavigator,
+} from 'react-navigation-tabs';
+import {
   createStackNavigator,
-} from 'react-navigation'
+} from 'react-navigation-stack';
 import TabBarIcon from '../components/TabBarIcon'
 import HomeScreen from '../screens/HomeScreen'
 import MessagesScreen from '../screens/MessagesScreen'

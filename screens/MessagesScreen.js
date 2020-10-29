@@ -1,6 +1,6 @@
 import React from 'react'
 import { SafeAreaView, ScrollView, StyleSheet } from 'react-native'
-import { ListItem } from 'react-native-elements'
+import { Avatar, ListItem, ListItemProps } from 'react-native-elements'
 import { Messages } from '../constants/Messages'
 
 class MessagesScreen extends React.Component {
@@ -9,15 +9,18 @@ class MessagesScreen extends React.Component {
       <SafeAreaView>
         <ScrollView>
           {Messages.map((user, i) => (
-            <ListItem
-              key={i}
-              leftAvatar={{ source: user.pic, size: 'large' }}
-              title={user.title}
-              titleStyle={styles.title}
-              subtitle={user.message}
-              subtitleStyle={styles.subtitle}
-              chevron
-            />
+            <><ListItem key={i}>
+                <ListItem.Content>
+                  <ListItem.Title style={styles.title}>
+                    {user.title}
+                  </ListItem.Title>
+                  <ListItem.Subtitle style={styles.subtitle}>
+                      {user.message}
+                </ListItem.Subtitle>
+                <Avatar source={user.pic}/></Avatar>
+                </ListItem.Content>
+                <ListItem.Chevron />
+              </ListItem>
           ))}
         </ScrollView>
       </SafeAreaView>
