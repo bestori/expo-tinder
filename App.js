@@ -24,8 +24,8 @@ export default class App extends React.Component {
     } else {
       return (
         <View style={styles.container}>
-          <StatusBar hidden />
-          <AppNavigator />
+          <StatusBar backgroundColor="black"/>
+          <AppNavigator style={navStyle.container} />
         </View>
       )
     }
@@ -42,7 +42,7 @@ export default class App extends React.Component {
         ...Icon.MaterialIcons.font,
         ...Icon.MaterialCommunityIcons.font,
         ...Icon.FontAwesome.font,
-        // ...Icon.Feather.font,
+        ...Icon.Feather.font,
       }),
     ])
   }
@@ -62,5 +62,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+  },
+})
+
+const navStyle = StyleSheet.create({
+  container: {
+    borderWidth: 1, 
+    borderRadius: 10,
+    borderColor: '#E91E63',
+    width: '80%',
+    padding: 5,
+    backgroundColor: '#FFEB3B'
   },
 })

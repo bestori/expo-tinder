@@ -1,30 +1,29 @@
 import React from 'react'
 import { SafeAreaView, ScrollView, StyleSheet } from 'react-native'
-import { Avatar, ListItem, ListItemProps } from 'react-native-elements'
+import { ListItem, Avatar } from 'react-native-elements'
 import { Messages } from '../constants/Messages'
 
 class MessagesScreen extends React.Component {
   render() {
     return (
       <SafeAreaView>
-        <ScrollView>
+        <Animated.ScrollView>
           {Messages.map((user, i) => (
-            <ListItem key={i}>
-                <ListItem.Content>
-                  <ListItem.Title style={styles.title}>
-                    {user.title}
-                  </ListItem.Title>
-                  <ListItem.Subtitle style={styles.subtitle}>
-                    {user.message}
-                  </ListItem.Subtitle>
-                  <Avatar>
-                    <Avatar.Accessory source={user.pic} size='large'/>
-                  </Avatar>
-                  <ListItem.Chevron />
-                </ListItem.Content>
-              </ListItem>
+            <ListItem
+              key={i}>
+              <Avatar rounded source={user.pic} size='large'/>
+              <ListItem.Content>
+              <ListItem.Title style={styles.title}>
+              {user.title}
+                </ListItem.Title>
+              <ListItem.Subtitle style={styles.subtitle}>
+              {user.message}
+              </ListItem.Subtitle>
+            </ListItem.Content>
+            <ListItem.Chevron />
+            </ListItem>
           ))}
-        </ScrollView>
+        </Animated.ScrollView>
       </SafeAreaView>
     )
   }
@@ -41,3 +40,28 @@ const styles = StyleSheet.create({
 })
 
 export default MessagesScreen
+
+    // {Messages.map((user, i) => (
+    //         <ListItem key={i}>
+    //             <ListItem.Content>
+    //               <ListItem.Title style={styles.title}>
+    //                 {user.title}
+    //               </ListItem.Title>
+    //               <ListItem.Subtitle style={styles.subtitle}>
+    //                 {user.message}
+    //               </ListItem.Subtitle>
+    //               <Avatar>
+    //                 <Avatar.Accessory source={user.pic} size='large'/>
+    //               </Avatar>
+    //             </ListItem.Content>
+    //           </ListItem>
+    //       ))}
+
+
+    // leftAvatar={{ source: user.pic, size: 'large' }}
+    //           title={user.title}
+    //           titleStyle={styles.title}
+    //           subtitle={user.message}
+    //           subtitleStyle={styles.subtitle}
+    //           chevron
+    //         />

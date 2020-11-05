@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "695511294272",
+    "firebase_url": "https://outta-56037.firebaseio.com",
+    "project_id": "outta-56037",
+    "storage_bucket": "outta-56037.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695511294272:android:7288b8483a1cbf76d39aa5",
+        "android_client_info": {
+          "package_name": "com.outta.outta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695511294272-7j1mqlfengfopae1mpoga0fkgoag0ia4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.outta.outta",
+            "certificate_hash": "dad420b2520960d8e8dc16be6914c0588216b354"
+          }
+        },
+        {
+          "client_id": "695511294272-n2bm67173437ps2ugoqf382uns8h111v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPTVcyJDmupfbNosunoV8X_hwcA1oQDN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695511294272-n2bm67173437ps2ugoqf382uns8h111v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

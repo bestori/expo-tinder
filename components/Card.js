@@ -8,6 +8,7 @@ const BOTTOM_BAR_HEIGHT = !Platform.isPad ? 29 : 49 // found from https://stacko
 export const Card = ({ pic, title, caption }) => (
   <Tile
     imageSrc={pic}
+    img={pic}
     imageContainerStyle={styles.imageContainer}
     activeOpacity={0.9}
     title={title}

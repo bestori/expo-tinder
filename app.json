@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-tinder",
-    "slug": "expo-tinder",
+    "name": "outta",
+    "slug": "outta",
     "privacy": "public",
     "sdkVersion": "39.0.0",
     "platforms": ["ios", "android"],
@@ -18,7 +18,13 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.outta.outta",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.outta.outta",
+      "versionCode": 1
     }
   }
 }
